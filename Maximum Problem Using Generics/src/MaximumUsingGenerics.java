@@ -14,8 +14,14 @@ public class MaximumUsingGenerics <T extends Comparable> {
                 max = element;
             }
         }
-        System.out.println("Maximum  is: "+max);
+        //Print Method inside Maximum method
+        printMax(max);
+//        System.out.println("Maximum  is: "+max);
         return max;
+    }
+    //Method to print the Maximum of Arrays
+    public static <T> void printMax(T max) {
+        System.out.println("Maximum is: "+ max);
     }
 
       public static void main(String[] args) {
